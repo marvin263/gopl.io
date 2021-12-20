@@ -22,7 +22,7 @@ func main() {
 }
 
 // basename removes directory components and a trailing .suffix.
-// e.g., a => a, a.go => a, a/b/c.go => c, a/b.c.go => b.c
+// e.g., a => a, geometry_test.go => a, a/b/c.go => c, a/b.c.go => b.c
 //!+
 func basename(s string) string {
 	slash := strings.LastIndex(s, "/") // -1 if "/" not found

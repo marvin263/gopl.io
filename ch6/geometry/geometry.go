@@ -7,7 +7,9 @@
 //!+point
 package geometry
 
-import "math"
+import (
+	"math"
+)
 
 type Point struct{ X, Y float64 }
 
@@ -28,6 +30,7 @@ func (p Point) Distance(q Point) float64 {
 // A Path is a journey connecting the points with straight lines.
 type Path []Point
 
+// 在能够给任意类型定义方法这一点上，Go和很多其它的面向对象的语言不太一样
 // Distance returns the distance traveled along the path.
 func (path Path) Distance() float64 {
 	sum := 0.0

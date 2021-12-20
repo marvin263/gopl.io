@@ -18,7 +18,17 @@ func main() {
 		s += sep + arg
 		sep = " "
 	}
-	fmt.Println(s)
+
+	fmt.Printf("%T, %T\n", [...]string{"Hello世界"}, []string{"Hello世界"})
+	fmt.Printf("%v, %v", cap([...]string{"Hello世界"}), cap([]string{"Hello世界"}))
+	var values []int
+	fmt.Println(len(values))
+}
+
+func reverse(s []int) {
+	for i, j := 0, len(s)-1; i < j; i, j = i+1, j-1 {
+		s[i], s[j] = s[j], s[i]
+	}
 }
 
 //!-
