@@ -3,7 +3,7 @@
 
 // See page 161.
 
-// Coloredpoint demonstrates struct embedding.
+// ColoredPoint demonstrates struct embedding.
 package main
 
 import (
@@ -54,7 +54,7 @@ func main() {
 */
 
 func init() {
-	//!+methodexpr
+	//!+method expr
 	p := Point{1, 2}
 	q := Point{4, 6}
 
@@ -66,7 +66,7 @@ func init() {
 	scale(&p, 2)
 	fmt.Println(p)            // "{2 4}"
 	fmt.Printf("%T\n", scale) // "func(*Point, float64)"
-	//!-methodexpr
+	//!-method expr
 }
 
 func init() {

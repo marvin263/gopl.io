@@ -39,7 +39,7 @@ func main() {
 	}
 }
 
-// containsAll reports whether x contains the elements of y, in order.
+// containsAll reports whether x contains all the elements of y, in order.
 func containsAll(x, y []string) bool {
 	for len(y) <= len(x) {
 		if len(y) == 0 {
@@ -51,6 +51,17 @@ func containsAll(x, y []string) bool {
 		x = x[1:]
 	}
 	return false
+}
+
+// createSlice Array和Slice 都产生了slice
+func createSlice() {
+	var arr [9]int = [9]int{1, 2, 3}
+	var sliceByArr []int = arr[2:]
+	_ = sliceByArr
+
+	slc := []int{2, 3, 4, 5}
+	var sliceBySlc []int = slc[2:9]
+	_ = sliceBySlc
 }
 
 //!-

@@ -48,6 +48,7 @@ func TestSliceRange(t *testing.T) {
 	slc[1] = "世界" //panic，只能设置到 len-1；cap决定是否新创建数组
 	PrintSlice("02-", slc)
 }
+
 func TestAbc(t *testing.T) {
 	slc := make([]string, 1, 2)
 	slc[0] = "诸葛亮"
@@ -66,6 +67,7 @@ func TestAbc(t *testing.T) {
 	PrintSlice("newslc-2", newslc2)
 	PrintSlice("slc-1", slc)
 }
+
 func PrintSlice(tag string, slc []string) {
 	fmt.Printf("\"%v\"\n", tag)
 	fmt.Printf("len=%d, cap=%d, pointer=%p\n", len(slc), cap(slc), slc)
