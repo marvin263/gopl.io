@@ -11,7 +11,7 @@ func TestFindOcurrences(t *testing.T) {
 	fmt.Println(findOcurrences("we we we we will rock you", "we", "we"))
 	// []
 	fmt.Println(findOcurrences("obo jvezipre obo jnvavldde jvezipre jvezipre jnvavldde jvezipre jvezipre jvezipre y jnvavldde jnvavldde obo jnvavldde jnvavldde obo jnvavldde jnvavldde jvezipre", "jnvavldde", "y"))
-	// ["student"]
+	// ["student"] 
 	fmt.Println(findOcurrences("alice is aa good girl she is a good student", "a", "good"))
 	// ["girl","student"]
 	fmt.Println(findOcurrences("alice is a good girl she is a good student", "a", "good"))
